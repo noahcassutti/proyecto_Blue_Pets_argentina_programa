@@ -1,0 +1,297 @@
+/* CSS GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F2F4FF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    z-index: -99999;
+    
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 40px;
+}
+
+.logoCel {
+    height: 70px;
+    width: 70px;
+}
+
+.navbarLg {
+    height: 7rem;
+}
+
+.offcanvas-body {
+    background-color: #1E4E79;
+}
+
+.offcanvas-header {
+    background-color: #5FA2E0;
+}
+
+.offcanvas {
+    max-width: 60%;
+}
+
+.nav-link {
+    font-size: 30px;
+    font-weight: 700;
+    color: #E6F2FF;
+}
+
+.nav-link:hover {
+    color: #1E4E79;
+    transition: .3s ease-in-out;
+}
+
+footer {
+    height: 80px;
+    background-color: #242C44;
+}
+
+.btnSubir{
+    background-color: #5FA2E0;
+    color: #242C44;
+}
+.btnContacto {
+    background-color: #5FA2E0;
+    color: #242C44;
+}
+
+.btnSubir:hover {
+    background-color: black;
+    color: white;
+}
+
+:root {
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: black;
+}
+
+.btnContacto:hover,
+.btnContacto:active {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #E6F2FF;
+}
+
+.copyright {
+    color: #E6F2FF;
+}
+
+.navbar {
+    background-color: #242C44;
+}
+
+main {
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* CSS DEL RESPECTIVO HTML */
+
+.divLinks {
+    height: 200px;
+}
+
+.linkAdoptar {
+    background-image: url(/IMG/adoptar.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repea;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+
+}
+.linkAdoptar:hover{
+    transform: scale(1.1);
+}
+.linkAdoptar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.5);
+}
+
+.linkServicio {
+    background-image: url(/IMG/servicios.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+.linkServicio:hover{
+    transform: scale(1.1);
+}
+.linkServicio::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.5);
+}
+
+.linkProductos {
+    background-image: url(/IMG/productos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+
+}
+.linkProductos:hover{
+    transform: scale(1.1);
+}
+
+.linkProductos::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.5);
+}
+
+.linkNosotros {
+    background-image: url(/IMG/quienesSomos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.linkNosotros:hover{
+    transform: scale(1.1);
+}
+
+.linkNosotros::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.aAdoptar {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    /* font-weight: bold; */
+    z-index: 999;
+}
+
+.aServicio {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    /* font-weight: bold; */
+    z-index: 999;
+
+}
+
+.aProductos {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    /* font-weight: bold; */
+    z-index: 999;
+
+}
+
+.aNosotros {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    /* font-weight: bolder; */
+    z-index: 999;
+
+}
+
+@media (max-width: 991px) {
+
+    .linkAdoptar,
+    .linkServicio,
+    .linkProductos,
+    .linkNosotros {
+        height: 50%;
+        width: 75%;
+    }
+
+    .rowLinks {
+        width: auto;
+        height: 500px;
+    }
+
+    .linkProductos {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .linkAdoptar,
+    .linkServicio,
+    .linkProductos,
+    .linkNosotros {
+        height: 100%;
+    }
+
+    .rowLinks {
+        height: 500px;
+    }
+}
+
+.rowCarousel {
+    margin-top: 10rem;
+}
+
+
+.letraHogar {
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    }
+
+.underline{
+        text-decoration: underline;
+
+}

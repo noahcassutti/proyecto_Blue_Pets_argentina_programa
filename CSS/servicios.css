@@ -1,0 +1,94 @@
+.bienvenida {
+    font-family: 'Pacifico', cursive;
+    margin-top: 100px;
+}
+.bienvenida h1 {
+    text-align: center;
+    font-size: 48px;
+    margin: 50px 0;
+}
+.bienvenida h2 {
+    margin: 50px 0 150px 0;
+    text-align: center;
+}
+.service-point {
+    text-align: center;
+    margin: 50px 0;
+    padding: 0 10px;
+}
+.service-point h2 {
+    background: #F2F4FF;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    color: #000;
+    background: #e3e1e1;
+}
+.info-card {
+    position: relative;
+    margin: 20px;
+    height: auto;
+    border: #000 6px solid;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px #000;
+    background: rgb(227, 225, 225, 0.8);
+    transition: .7s;
+}
+.info-card:hover {
+    transform: scale(1.01,1.01);
+    box-shadow: 5px 10px 15px #000;
+    transition: .7s;
+}
+.info-card .info-image {
+    object-fit: fill;
+    margin: 0;
+    padding: 0;
+}
+.info-card .info-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.info-card .info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px;
+}
+.info-card .info-content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.info-card .info-content p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.info-card .info-content p i {
+    font-size: 12px;
+}
+.info-card .info-content .link {
+    justify-content: center;
+    text-align: center;
+}
+.info-card .info-content .link button {
+    margin: 0 30px;
+    border-radius: 50%;
+    border: #000 3px solid;
+}
+.info-card .info-content .link button img {
+    border-radius: 50%;
+    max-width: 250px;
+    max-height: 200px;
+}
+#map {
+	height: 200px;
+	width: 100%;
+    border-radius: 10px;
+    border: #000 solid 1px;
+}

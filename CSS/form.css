@@ -1,0 +1,185 @@
+/* spans */
+span {
+    color: red;
+}
+
+/* Estilos de inputs */
+label {
+    font-weight: bold;
+}
+.label-s {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+/* Cuerpo central */
+.cuerpoCentral {
+    box-shadow: 10px 10px 25px 14px  gray;
+}
+.row {
+    margin: 10px 0;
+}
+/* inputs */
+.form-grupo-input {
+	position: relative;
+}
+
+.form-input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid #000;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.form-input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.form-input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	color: #bb2929;
+	display: none;
+}
+
+.form-input-error-activo {
+	display: block;
+}
+
+.form-validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.form-checkbox {
+	margin-right: 10px;
+}
+
+.form-grupo-terminos, 
+.form-mensaje,
+.form-grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.form-mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.form-mensaje-activo {
+	display: block;
+}
+
+.form-mensaje p {
+	margin: 0;
+}
+
+.form-grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.form-btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.form-mensaje-exito {
+	margin-top: 20px;
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.form-mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.form-grupo-correcto .form-validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.form-grupo-correcto .form-input {
+	border: 3px solid #1ed12d;
+}
+
+.form-grupo-incorrecto .form-label {
+	color: #bb2929;
+}
+
+.form-grupo-incorrecto .form-validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.form-grupo-incorrecto .form-input {
+	border: 3px solid #bb2929;
+}
+
+/* boton de envio de formulario */
+
+.send-btn {
+    margin-bottom: 20px;
+    background-color: #4A90E2;
+    font-weight: bold;
+    color: white;
+}
+/* eliminar padding de los form control */
+.input-largo {
+    height: 250px;
+}
+
+.container {
+    padding: 0;
+    background-color: white;
+}
+
+/* estilos ventana modal */
+
+.modal-container{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    margin-top: 170px;
+    width: 40%;
+    height: 50%;
+    background-color: #fff;
+}

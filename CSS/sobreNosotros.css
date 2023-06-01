@@ -1,0 +1,88 @@
+.img1 {
+    background-image: url(/IMG/quienesSomos1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2 {
+    background-image: url(/IMG/quienesSomos2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img3 {
+    background-image: url(/IMG/quienesSomos3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+
+    .img1,
+    .img2,
+    .img3 {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 200px;
+    }
+
+    .txt1,
+    .txt2,
+    .txt3 {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: auto;
+    }
+
+    .divRow {
+        height: auto;
+        
+    }
+}
+
+@media (min-width: 992px) {
+
+    .img1,
+    .txt2,
+    .img3 {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 100%;
+    }
+
+    .txt1,
+    .img2,
+    .txt3 {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 100%;
+    }
+
+    .divRow {
+        height: 400px;
+        transition: .5s ease-in-out;
+        border: #000 6px solid;
+        border-radius: 15px;
+        box-shadow: 0 5px 10px #000;
+        background: rgb(227, 225, 225, 0.8);
+    }
+
+    .divRow:hover {
+        box-shadow: 10px 10px 25px 3px gray;
+        border-radius: 10px;
+        transition: .5s ease-in-out;
+        transform: scale(1.1);
+
+    }
+}
+
+.txtMain {
+    background: rgb(227, 225, 225, 0.8);
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+}

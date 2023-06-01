@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 40px;
+}
+
+.logoCel {
+    height: 70px;
+    width: 70px;
+}
+
+.navbarLg {
+    height: 7rem;
+}
+
+.offcanvas-body,
+.offcanvas-header {
+    background-color: #242C44;
+}
+
+.offcanvas {
+    max-width: 60%;
+}
+
+.nav-link {
+    font-size: 2rem;
+}
+
+.containerLinks {
+    margin-top: 170px;
+}
+
+main {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+footer {
+    height: 80px;
+    background-color: #242C44;
+}
+
+.navbar {
+    background-color: #242C44;
+}
+
+.card-img-top {
+    height: 50%;
+    width: 50%;
+   
+}
